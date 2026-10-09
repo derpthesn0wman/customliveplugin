@@ -1,0 +1,22 @@
+name: Lives
+version: ${project.version}
+main: com.example.lives.LivesPlugin
+api-version: '1.16'
+description: Three lives with shrinking health, bans on elimination, and revive items.
+commands:
+  lives:
+    description: Check or manage lives.
+    usage: /lives [check|set|add|remove|toggle|give|revive|reload]
+  revive:
+    description: Revive an eliminated player using a Revive Token.
+    usage: /revive <player>
+permissions:
+  lives.admin:
+    description: Manage lives, give items, toggle life loss, revive without an item.
+    default: op
+  lives.revive:
+    description: Use a Revive Token via /revive.
+    default: true
+  lives.check:
+    description: Check lives.
+    default: true

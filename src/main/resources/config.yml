@@ -1,0 +1,12 @@
+# Max hearts for each number of lives remaining (1 heart = 2 HP)
+hearts:
+  3: 10
+  2: 8
+  1: 4
+
+# How many lives a player gets back when they are revived
+revived-lives: 1
+
+# Crafting recipes for the Life Item and Revive Token
+recipes:
+  enabled: true
